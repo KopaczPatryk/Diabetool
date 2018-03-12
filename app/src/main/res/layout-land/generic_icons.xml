@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    android:id="@+id/c_icons"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <kopacz.diabetool.SquareImageButton
+        android:visibility="gone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/ic_caffeine"
+        android:background="@drawable/caffeine"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ic_energyvalue"
+            android:background="@drawable/energy_value"
+            android:layout_margin="2dp" />
+
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ic_proteins"
+            android:background="@drawable/proteins"
+            android:layout_margin="2dp" />
+
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ic_fat"
+            android:background="@drawable/fat"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ic_hydrocarbonates"
+            android:background="@drawable/hydrocarbonates"
+            android:layout_margin="2dp" />
+
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ic_roughage"
+            android:background="@drawable/roughage"
+            android:layout_margin="2dp" />
+
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/ic_sugar"
+            android:background="@drawable/sugar"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+</LinearLayout>

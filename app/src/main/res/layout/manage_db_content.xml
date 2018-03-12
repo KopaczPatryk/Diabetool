@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_manage_db"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:theme="@style/AlertDialog.AppCompat"
+    android:background="@color/b400">
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_database_removal_hint"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_database_removal_in_use_hint"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/clear_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_erase_database_button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"/>
+</LinearLayout>

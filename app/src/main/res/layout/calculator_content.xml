@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CalculatorActivity"
+    tools:showIn="@layout/activity_calculator"
+    android:orientation="vertical"
+    android:background="@color/b200"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <LinearLayout
+        android:background="@color/b400"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:text="@string/calc_activity_input_given_values"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="@string/calc_activity_carbohydrates"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+            <kopacz.diabetool.FloatInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:id="@+id/calc_carbohydrates"
+                android:gravity="center_vertical|center_horizontal"
+                android:digits="@string/digitset_float"
+                android:inputType="number"
+                android:clickable="false"
+                android:hint="@string/unit_gram"
+                android:textColorHint="@color/htwhite" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:text="@string/calc_activity_proteins"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <kopacz.diabetool.FloatInputEditText
+                android:inputType="number"
+                android:digits="@string/digitset_float"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:id="@+id/calc_proteins"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="false"
+                android:hint="@string/unit_gram"
+                android:textColorHint="@color/htwhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:text="@string/calc_activity_fat"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <kopacz.diabetool.FloatInputEditText
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="@string/digitset_float"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:id="@+id/calc_fat"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="false"
+                android:hint="@string/unit_gram"
+                android:textColorHint="@color/htwhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="WW: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calc_WW"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="WBT: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calc_WBT"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:id="@+id/calc_tablayout"-->
+        <!--app:tabSelectedTextColor="@color/white"-->
+        <!--app:tabTextColor="@color/white">-->
+
+    <!--</android.support.design.widget.TabLayout>-->
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/calc_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/b400" />-->
+</LinearLayout>

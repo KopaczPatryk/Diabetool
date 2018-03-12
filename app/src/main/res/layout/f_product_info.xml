@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:background="@drawable/border"
+    android:theme="@style/AppTheme.fragmentProductInfo">
+    <!--BRAK KOFEINY-->
+
+    <include layout="@layout/generic_icons"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:id="@+id/c_header"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/f_productinfo_name"
+                    android:text="@string/f_productinfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/htwhite" />
+            </LinearLayout>
+
+            <include layout="@layout/generic_values" />
+
+            <include layout="@layout/generic_ww_wbt" />
+
+            <include layout="@layout/generic_barcode" />
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

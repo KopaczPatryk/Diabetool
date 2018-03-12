@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_faq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kopacz.diabetool.FaqActivity"
+    tools:showIn="@layout/activity_faq"
+    android:orientation="vertical">
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:orientation="vertical"
+            android:background="@color/b400">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_what_is_ww_wbt"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_what_is_ww_wbt_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_how_ww_wbt_is_counted"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_how_ww_wbt_is_counted_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_why_does_app_need_net"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_why_does_app_need_net_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_db_update_when_does_it_happen"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_db_update_when_does_it_happen_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_can_i_disable_reporting"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_can_i_disable_reporting_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_will_i_be_able_to_disable_reporter"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_will_i_be_able_to_disable_reporter_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_can_i_help_with_db"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_can_i_help_with_db_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_can_i_help_with_app_design"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_can_i_help_with_app_design_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_is_db_data_accurate"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_is_db_data_accurate_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_how_was_the_db_made"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faq_how_was_the_db_made_explanation"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    <!--</ScrollView>-->
+</ScrollView>

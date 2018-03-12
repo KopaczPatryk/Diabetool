@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/db_contextmenu_set_favourite"
+        android:title="@string/db_contextmenu_add_to_favourites" />
+    <item
+        android:id="@+id/meal_db_contextmenu_openmeal"
+        android:title="@string/db_contextmenu_view" />
+    <item
+        android:id="@+id/meal_db_contextmenu_edit"
+        android:title="@string/db_contextmenu_edit" />
+    <item
+        android:id="@+id/meal_db_contextmenu_delete"
+        android:title="@string/db_contextmenu_delete" />
+</menu>

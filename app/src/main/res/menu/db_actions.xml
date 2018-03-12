@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <item android:id="@+id/database_action_setWeight"
+        android:title="@string/db_action_change_weights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="false"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/database_action_add_own"
+        android:title="@string/db_action_add_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="false" />
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/database_action_showFavourites"
+            android:title="@string/db_action_show_favourites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true" />
+        <item android:id="@+id/database_action_showOnlyOwn"
+            android:title="@string/db_action_show_only_mine"
+            app:showAsAction="collapseActionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true" />
+    </group>
+</menu>

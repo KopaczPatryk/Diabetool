@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mc_contextmenu_editweight"
+        android:title="@string/mc_contextmenu_edit_weight" />
+    <item
+        android:id="@+id/mc_contextmenu_delete"
+        android:title="@string/mc_contextmenu_delete" />
+</menu>

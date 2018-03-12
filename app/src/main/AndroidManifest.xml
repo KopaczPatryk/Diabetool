@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kopacz.diabetool">
+
+    <!-- PERMY APKI -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- PERMY SCANNERA -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <service
+            android:name=".Reporter"
+            android:enabled="true"
+            android:exported="false"
+            android:label="Custom product report" />
+        <service
+            android:name=".DatabaseUpdaterService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="Product database updater" />
+
+        <!-- android:process=":Report" -->
+        <!-- android:process=":DBUpdater" -->
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/a_mainmenu_title"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DatabaseActivity"
+            android:label="@string/a_db_title"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".DatabaseEditProduct"
+            android:label="@string/title_activity_database_edit_product"
+            android:parentActivityName=".DatabaseActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.DatabaseActivity" />
+        </activity>
+        <activity
+            android:name=".DatabaseAddActivity"
+            android:label="@string/a_db_add_title"
+            android:parentActivityName=".DatabaseActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.DatabaseActivity" />
+        </activity>
+        <!-- KALKULATOR -->
+        <activity
+            android:name=".CalculatorActivity"
+            android:label="@string/title_activity_activity_calculator"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+
+        <!-- ACTIVITY SKANERA -->
+        <activity
+            android:name=".SimpleScannerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".MealComposerActivity" -->
+        <!-- android:label="@string/title_activity_meal_composer" -->
+        <!-- android:parentActivityName=".MainMenuActivity" -->
+        <!-- android:theme="@style/AppTheme" -->
+        <!-- android:windowSoftInputMode="adjustPan"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value="kopacz.diabetool.MainMenuActivity" /> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name=".MealsDatabaseActivity"
+            android:label="@string/title_activity_meals_database"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".MealComposerAddActivity"
+            android:label="@string/mc_add_title"
+            android:parentActivityName=".MealsDatabaseActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".MealComposerEditActivity"
+            android:label="@string/mc_edit_title"
+            android:parentActivityName=".MealsDatabaseActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".AndroidDatabaseManager"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".FaqActivity"
+            android:label="@string/title_activity_faq"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".DatabaseManagerActivity"
+            android:label="@string/title_activity_db_management"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kopacz.diabetool.MainMenuActivity" />
+        </activity>
+    </application>
+</manifest>

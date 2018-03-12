@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <item
+        android:id="@+id/add_ingredient"
+        android:title="@string/mc_action_add_ingredient"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/plus"/>
+    <item
+        android:id="@+id/save_meal"
+        android:icon="@drawable/ic_save"
+        android:title="@string/mc_action_save" />
+</menu>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainMenuActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_mainmenu"
+    android:background="@drawable/border">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|top">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<kopacz.diabetool.SquareImageButton-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="start|center"-->
+                <!--android:padding="@dimen/padding"-->
+                <!--android:text="@string/a_mainmenu_profile"-->
+                <!--android:background="@drawable/ripple"-->
+                <!--android:layout_margin="5dip"-->
+                <!--style="@style/AppTheme.Button.MainMenu"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dip"-->
+            <!--android:background="@color/htwhite"/>-->
+        <!--<View-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dip"-->
+            <!--android:background="@color/htwhite"/>-->
+
+        <!--android:drawableLeft="@drawable/ic_meal_256x256"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+            <kopacz.diabetool.SquareImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_apple_256x256"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="start|center"
+                android:padding="@dimen/padding"
+                android:text="@string/a_mainmenu_db"
+                android:background="@drawable/ripple"
+                android:onClick="openDB"
+                android:layout_margin="5dip"
+                style="@style/AppTheme.Button.MainMenu"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/htwhite"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:padding="8dp"
+        android:gravity="center_vertical">
+        <kopacz.diabetool.SquareImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_calculator_256x256"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="@dimen/padding"
+                android:text="@string/a_mainmenu_calc"
+                android:background="@drawable/ripple"
+                android:id="@+id/button"
+                android:onClick="openCalc"
+                android:layout_margin="5dip"
+                style="@style/AppTheme.Button.MainMenu"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/htwhite"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+            <kopacz.diabetool.SquareImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_meal_256x256" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="@dimen/padding"
+                android:text="@string/nav_my_meals"
+                android:background="@drawable/ripple"
+                android:layout_margin="5dip"
+                style="@style/AppTheme.Button.MainMenu"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="openMealComposer" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/htwhite"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="8dp"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<kopacz.diabetool.SquareImageButton-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="start|center"-->
+                <!--android:padding="@dimen/padding"-->
+                <!--android:text="@string/a_mainmenu_tutorials"-->
+                <!--android:background="@drawable/ripple"-->
+                <!--android:layout_margin="5dip"-->
+                <!--android:onClick="openTutorials"-->
+                <!--style="@style/AppTheme.Button.MainMenu"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dip"-->
+            <!--android:background="@color/htwhite"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <kopacz.diabetool.SquareImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_faq_256x256" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="@dimen/padding"
+                android:text="@string/a_mainmenu_faq"
+                android:background="@drawable/ripple"
+                android:layout_margin="5dip"
+                android:onClick="openFaq"
+                style="@style/AppTheme.Button.MainMenu"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/htwhite"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+            <kopacz.diabetool.SquareImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_settings2_256x256" />
+            <Button
+                android:id="@+id/nav_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="@dimen/padding"
+                android:text="@string/a_mainmenu_db_management"
+                android:background="@drawable/ripple"
+                android:layout_margin="5dip"
+                style="@style/AppTheme.Button.MainMenu"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="openSettings"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
